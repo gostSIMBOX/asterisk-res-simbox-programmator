@@ -31,7 +31,8 @@ ASTERISK_INCLUDE   ?= /usr/include
 DONGLE_CORE_INCLUDE ?= ..
 
 CC        = gcc
-CFLAGS    = -fPIC -Wall -I$(SRC) -I$(ASTERISK_INCLUDE) -I$(DONGLE_CORE_INCLUDE)
+CFLAGS    = -fPIC -Wall -DAST_MODULE=\"res_simbox_programmator\" \
+            -I$(SRC) -I$(ASTERISK_INCLUDE) -I$(DONGLE_CORE_INCLUDE)
 LDFLAGS   = -shared
 TOOL_CFLAGS = -Wall -I$(SRC)
 
