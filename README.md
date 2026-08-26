@@ -1,0 +1,1 @@
+# asterisk-res-simbox-programmator
